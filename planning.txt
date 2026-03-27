@@ -1,0 +1,303 @@
+# 🚆 BGS Sidoarjo Landing Page — Development Plan (Next.js)
+
+## 🎯 Objective
+
+Membangun **landing page modern minimalist (light mode)** untuk:
+
+* Branding komunitas **BGS Sidoarjo**
+* Menarik member baru
+* Menampilkan kredibilitas (diakui PT KAI & aktivitas sosial)
+
+---
+
+## 🧱 Tech Stack
+
+* Framework: Next.js (App Router)
+* Styling: Tailwind CSS
+* Deployment: Vercel
+* Asset: Static (image/vector, no backend yet)
+
+---
+
+## 📁 Project Structure (Next.js App Router)
+
+```
+/app
+  /components
+    Navbar.jsx
+    Hero.jsx
+    Credibility.jsx
+    About.jsx
+    Activities.jsx
+    Gallery.jsx
+    Stats.jsx
+    CTA.jsx
+    Footer.jsx
+
+  /styles
+    globals.css
+
+  layout.js
+  page.js
+
+/public
+  /images
+  /icons
+```
+
+---
+
+## 🧩 Section Breakdown & Dev Tasks
+
+### 1. Navbar
+
+**File:** `/components/Navbar.jsx`
+
+Features:
+
+* Logo: BGS Sidoarjo
+* Menu: About, Activities, Gallery
+* CTA button: Join Komunitas
+
+Tasks:
+
+* Sticky top
+* Transparent → solid on scroll
+* Responsive (hamburger mobile)
+
+---
+
+### 2. Hero Section
+
+**File:** `/components/Hero.jsx`
+
+Content:
+
+* Title: BGS Sidoarjo
+* Subtitle
+* Badge: “Diakui oleh PT KAI”
+* CTA buttons (Join / Galeri)
+* Train illustration/image
+
+Tasks:
+
+* Centered / split layout
+* Responsive scaling
+* Add subtle animation (fade-in)
+
+---
+
+### 3. Credibility Section
+
+**File:** `/components/Credibility.jsx`
+
+Content:
+
+* Highlight:
+
+  * Diakui PT KAI
+  * Relawan Posko
+  * Sosialisasi Perlintasan
+
+Tasks:
+
+* 2–3 column layout
+* Icon + short text
+* Clean minimal design
+
+---
+
+### 4. About Section
+
+**File:** `/components/About.jsx`
+
+Content:
+
+* Penjelasan komunitas
+* Fokus:
+
+  * edukasi
+  * keselamatan
+  * komunitas railfans
+
+Tasks:
+
+* Grid layout (text + illustration)
+* Typography emphasis
+
+---
+
+### 5. Activities Section
+
+**File:** `/components/Activities.jsx`
+
+Cards:
+
+* Relawan Posko Stasiun
+* Sosialisasi Perlintasan KA Sebidang
+* Train Spotting
+* Diskusi & Edukasi
+
+Tasks:
+
+* Card component reusable
+* Hover effect (shadow/border)
+* Responsive grid
+
+---
+
+### 6. Gallery Section
+
+**File:** `/components/Gallery.jsx`
+
+Content:
+
+* Grid foto kereta & kegiatan
+
+Tasks:
+
+* Image grid (3–4 columns desktop)
+* Responsive collapse
+* Optional hover zoom
+
+---
+
+### 7. Stats Section
+
+**File:** `/components/Stats.jsx`
+
+Content:
+
+* Jumlah anggota
+* Jumlah kegiatan
+* Dokumentasi
+
+Tasks:
+
+* Big typography
+* Simple layout (3 columns)
+* Animated counter (optional)
+
+---
+
+### 8. CTA Section
+
+**File:** `/components/CTA.jsx`
+
+Content:
+
+* Ajakan join komunitas
+* Button:
+
+  * Telegram
+  * Discord
+
+Tasks:
+
+* Highlight section (subtle yellow/red accent)
+* Centered layout
+
+---
+
+### 9. Footer
+
+**File:** `/components/Footer.jsx`
+
+Content:
+
+* Nama komunitas
+* Navigasi
+* Sosial media
+
+Tasks:
+
+* Simple & clean
+* Responsive
+
+---
+
+## 🧠 Page Assembly
+
+**File:** `/app/page.js`
+
+Flow:
+
+```
+Navbar
+Hero
+Credibility
+About
+Activities
+Gallery
+Stats
+CTA
+Footer
+```
+
+---
+
+## 🎨 Styling Guidelines
+
+* Background: putih (#FFFFFF)
+* Text: hitam / abu gelap
+* Accent:
+
+  * kuning (CTA / highlight)
+  * merah (secondary highlight)
+* Banyak whitespace
+* Gunakan Tailwind utility classes
+* Hindari shadow berat (minimalist)
+
+---
+
+## ⚡ Development Steps (Step-by-Step)
+
+1. Setup project:
+
+   * `npx create-next-app@latest`
+   * install Tailwind
+
+2. Setup layout & global styles
+
+3. Build sections satu per satu:
+
+   * Hero → About → Activities → dst
+
+4. Import semua ke `page.js`
+
+5. Add responsiveness
+
+6. Final polish:
+
+   * spacing
+   * typography
+   * hover effects
+
+7. Deploy ke Vercel
+
+---
+
+## 🚀 Future Upgrade (Setelah LP Jadi)
+
+* Integrasi Supabase:
+
+  * Auth (login komunitas)
+  * Database post
+* Tambah fitur:
+
+  * Forum / diskusi
+  * Upload galeri user
+* Integrasi bot Telegram (notif update)
+
+---
+
+## 🏁 End Goal
+
+Landing page yang:
+
+* Clean & modern
+* Representatif untuk **BGS Sidoarjo**
+* Nunjukin kredibilitas (PT KAI + aktivitas sosial)
+* Siap di-scale jadi platform komunitas
+
+---

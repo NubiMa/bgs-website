@@ -1,0 +1,306 @@
+# 🚆 BGS Sidoarjo — Landing Page Design Structure (Modern Minimalist, Light Mode)
+
+## 🧠 Core Principle
+
+* Clean, modern, human-centered
+* Fokus ke **komunitas & impact nyata**
+* Visual harus terasa **ringan, rapi, dan profesional**
+* **Photo kegiatan > elemen dekoratif**
+
+---
+
+## 📐 Global Layout Rules
+
+* Max width: `1200px`
+* Section padding: `80px – 120px`
+* Grid: 12-column system
+* Spacing antar section: besar (biar lega)
+* Background:
+
+  * putih dominan
+  * selingan light gray (`#F9FAFB`)
+
+---
+
+## 🧱 PAGE STRUCTURE
+
+---
+
+# 1. NAVBAR
+
+### Layout:
+
+* Horizontal (fixed top)
+* Height: ~72px
+
+### Content:
+
+* Left: Logo / Text → **BGS Sidoarjo**
+* Center: Navigation
+
+  * Tentang
+  * Kegiatan
+  * Galeri
+* Right:
+
+  * Button: **Join Komunitas**
+
+### Style:
+
+* Background: transparan → jadi putih saat scroll
+* Border bottom tipis saat scroll
+* Button:
+
+  * warna kuning (primary)
+
+---
+
+# 2. HERO SECTION
+
+### Layout:
+
+* 2 column (desktop):
+
+  * kiri: text
+  * kanan: image
+* Mobile: stacked
+
+### Content:
+
+* Title:
+  → **BGS Sidoarjo**
+* Subtitle:
+  → komunitas railfans fokus edukasi, keselamatan, dan kolaborasi
+* Badge kecil:
+  → “Diakui oleh PT KAI”
+* CTA:
+
+  * Primary: Join Komunitas (kuning)
+  * Secondary: Lihat Galeri (outline)
+
+### Visual:
+
+* Foto kereta / kegiatan (real photo)
+* Clean, tidak rame
+
+### Spacing:
+
+* Top: besar (biar impactful)
+
+---
+
+# 3. TRUST / CREDIBILITY STRIP
+
+### Layout:
+
+* 3 column (desktop)
+
+### Content:
+
+* Diakui PT KAI
+* Aktif Relawan Posko
+* Sosialisasi Keselamatan
+
+### Style:
+
+* Background: light gray
+* Icon kecil + text pendek
+* Centered
+
+---
+
+# 4. ABOUT SECTION (Tentang BGS)
+
+### Layout:
+
+* 2 column:
+
+  * kiri: text
+  * kanan: image / ilustrasi
+
+### Content:
+
+* Judul: Tentang BGS
+* Paragraf pendek:
+
+  * komunitas railfans
+  * fokus edukasi & sosial
+* Bullet points:
+
+  * edukasi
+  * keselamatan
+  * komunitas aktif
+
+### Style:
+
+* Typography clean
+* Banyak whitespace
+
+---
+
+# 5. ACTIVITIES SECTION (Kegiatan)
+
+### Layout:
+
+* Grid 4 card (desktop)
+* 2 kolom (tablet)
+* 1 kolom (mobile)
+
+### Cards:
+
+1. Relawan Posko Stasiun
+2. Sosialisasi Perlintasan KA
+3. Train Spotting
+4. Diskusi & Edukasi
+
+### Card Style:
+
+* Background: putih
+* Border: tipis
+* Shadow: soft
+* Radius: 10px
+
+### Interaction:
+
+* Hover:
+
+  * sedikit naik
+  * shadow lebih jelas
+
+---
+
+# 6. GALLERY SECTION
+
+### Layout:
+
+* Grid:
+
+  * 3–4 kolom desktop
+  * gap konsisten
+
+### Content:
+
+* Foto kegiatan real
+* Fokus ke:
+
+  * posko
+  * sosialisasi
+  * spotting
+
+### Interaction:
+
+* Hover:
+
+  * zoom dikit
+  * overlay tipis
+
+---
+
+# 7. IMPACT / STATS SECTION
+
+### Layout:
+
+* 3 column centered
+
+### Content:
+
+* Anggota
+* Kegiatan
+* Dokumentasi
+
+### Style:
+
+* Angka besar (highlight)
+* Label kecil di bawah
+* Minimalist (no card berat)
+
+---
+
+# 8. CTA SECTION
+
+### Layout:
+
+* Centered
+
+### Content:
+
+* Headline:
+  → “Gabung bareng BGS Sidoarjo sekarang”
+* Subtext pendek
+* Button:
+
+  * Telegram
+  * Discord
+
+### Style:
+
+* Background:
+
+  * putih / sedikit aksen kuning lembut
+* Fokus ke conversion
+
+---
+
+# 9. FOOTER
+
+### Layout:
+
+* 3 column
+
+### Content:
+
+* Logo + deskripsi singkat
+* Navigasi
+* Sosial media
+
+### Style:
+
+* Minimal
+* Text kecil
+* Background putih / abu tipis
+
+---
+
+## 🎨 DESIGN SYSTEM (SIMPLE)
+
+### Colors:
+
+* White: #FFFFFF
+* Text: #111111
+* Yellow: #FACC15
+* Red: #E11D48
+* Gray light: #F9FAFB
+* Border: #E5E7EB
+
+---
+
+## 🔤 Typography:
+
+* Heading: bold, clean sans-serif
+* Body: regular, readable
+* Spacing antar text lega
+
+---
+
+## ✨ Interaction Rules
+
+* Hover: subtle only
+* Animasi:
+
+  * fade-in
+  * slide-up ringan
+* Tidak berlebihan
+
+---
+
+## 🚀 FINAL GOAL
+
+Website harus terasa:
+
+* bersih & modern
+* komunitas yang aktif & nyata
+* terpercaya (PT KAI)
+* bikin orang:
+  → “ini komunitas legit, gue pengen join”
+
+---
