@@ -7,14 +7,14 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <div className="text-[13px] font-extrabold text-gray-900 mb-1 tracking-tight">BGS Sidoarjo</div>
           <p className="text-[11px] leading-relaxed">
-            © 2024 Barisan Generasi Sepur. Hak Cipta Dilindungi.<br/>
+            © 2026 Barisan Generasi Sepur. Hak Cipta Dilindungi.<br/>
             Menjaga Tradisi, Membangun Negeri.
           </p>
         </div>
 
         {/* Right Side Links */}
         <div className="flex items-center gap-6 font-medium text-[11px] text-gray-600">
-          <a href="#" className="hover:text-[#D1A71D] transition-colors">Instagram</a>
+          <a href="https://www.instagram.com/bgs_sidoarjo/" className="hover:text-[#D1A71D] transition-colors">Instagram</a>
           <a href="#" className="hover:text-[#D1A71D] transition-colors">Facebook</a>
           <a href="#" className="hover:text-[#D1A71D] transition-colors">Tiktok</a>
           <a href="#" className="hover:text-[#D1A71D] transition-colors">Hubungi Kami</a>

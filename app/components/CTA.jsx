@@ -1,6 +1,8 @@
+'use client'
+
 export default function CTA() {
   return (
-    <section id="join" className="relative group py-24 bg-[#1C1C1C] overflow-hidden">
+    <section id="contact" className="relative group py-32 bg-[#1C1C1C] overflow-hidden">
       {/* Interactive Grid Overlay */}
       <div 
         className="absolute inset-0 pointer-events-none opacity-20 md:opacity-0 md:group-hover:opacity-30 transition-opacity duration-700 z-0" 
@@ -11,57 +13,95 @@ export default function CTA() {
         }}
       ></div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        <div className="bg-[#C59B1A] rounded-[2.5rem] p-12 md:p-20 text-center shadow-[0_20px_50px_rgb(197,155,26,0.3)] relative overflow-hidden group/card">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
-          {/* Subtle inner gradient to simulate the mockup's lighting */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#D8AB1D] to-[#A37F12] opacity-90 group-hover:opacity-100 transition-opacity duration-700"></div>
-
-          <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#111111] mb-6 leading-tight tracking-tight">
-              Siap Menjadi Bagian <br className="hidden md:block"/> dari Perubahan?
+          {/* Left: Contact Info */}
+          <div>
+            <div className="text-xs font-bold tracking-widest text-[#D1A71D] uppercase mb-3">TETAP TERHUBUNG</div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+              Punya Pertanyaan <br className="hidden md:block"/> atau Masukan?
             </h2>
-            <p className="text-[#333333] text-[15px] font-medium mb-12 max-w-xl mx-auto leading-relaxed">
-              Gabung bersama ratusan pemuda lainnya untuk menjaga tradisi perkeretaapian dan membangun kesadaran keselamatan transportasi.
+            <p className="text-gray-400 text-[15px] font-medium mb-12 leading-relaxed max-w-md">
+              Kami sangat menghargai setiap masukan, kritik, dan dukungan Anda. Silakan kirimkan pesan melalui form di samping atau hubungi kami melalui saluran resmi komunitas.
             </p>
 
-            {/* Buttons */}
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://t.me/bgs_sidoarjo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-white hover:bg-gray-50 text-gray-900 font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
-              >
-                <svg className="w-5 h-5 shrink-0 text-[#229ED9]" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.438l-2.967-.924c-.645-.203-.657-.645.136-.953l11.57-4.461c.537-.194 1.006.131.836.952l-.831-.831z"/>
-                </svg>
-                Telegram Group
-              </a>
-              <a
-                href="https://discord.gg/bgs-sidoarjo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-white hover:bg-gray-50 text-gray-900 font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
-              >
-                <svg className="w-5 h-5 shrink-0 text-[#5865F2]" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.114 18.103.133 18.118a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
-                </svg>
-                Discord Server
-              </a>
-            {/* Desktop CTA */}
-            <div className="flex justify-center mt-6">
-              <a
-                href="#join"
-                className="bg-white text-[#D1A71D] hover:bg-[#D1A71D] hover:text-white text-base font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1"
-              >
-                Join
-              </a>
+            <div className="space-y-8">
+              <div className="flex items-start gap-5 group/item cursor-default">
+                <div className="w-12 h-12 rounded-full bg-[#111111] border border-gray-800 flex items-center justify-center text-[#D1A71D] shrink-0 group-hover/item:scale-110 transition-transform duration-300 shadow-md">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-white font-bold mb-1">Email Komunitas</h4>
+                  <p className="text-gray-400 text-sm">komunitasbgs.sidoarjo@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-5 group/item cursor-default">
+                <div className="w-12 h-12 rounded-full bg-[#111111] border border-gray-800 flex items-center justify-center text-[#D1A71D] shrink-0 group-hover/item:scale-110 transition-transform duration-300 shadow-md">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-white font-bold mb-1">Sekretariat</h4>
+                  <p className="text-gray-400 text-sm">Jalan Balai Desa, RT 12 RW 04, Dusun Buduran, Desa Buduran, Kecamatan
+Buduran, Kabupaten Sidoarjo, Jawa Timur</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
+          {/* Right: Feedback Form Card */}
+          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl relative">
+            <h3 className="text-2xl font-extrabold text-[#111111] mb-8">Kirim Tanggapan</h3>
+            <form 
+              className="space-y-6"
+              onSubmit={(e) => { e.preventDefault(); alert('Terima kasih! Pesan Anda telah dikirim.'); }}
+            >
+              <div>
+                <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Nama Lengkap</label>
+                <input 
+                  type="text" 
+                  className="w-full bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-[#D1A71D] focus:border-[#D1A71D] outline-none focus:bg-white transition-colors px-4 py-3.5" 
+                  placeholder="Masukkan nama Anda" 
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Alamat Email</label>
+                <input 
+                  type="email" 
+                  className="w-full bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-[#D1A71D] focus:border-[#D1A71D] outline-none focus:bg-white transition-colors px-4 py-3.5" 
+                  placeholder="emailanda@contoh.com" 
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Kritik & Saran</label>
+                <textarea 
+                  rows="4" 
+                  className="w-full bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-[#D1A71D] focus:border-[#D1A71D] outline-none focus:bg-white transition-colors px-4 py-3.5 resize-none" 
+                  placeholder="Tuliskan pesan atau saran Anda untuk BGS..."
+                  required
+                ></textarea>
+              </div>
+              <button 
+                type="submit" 
+                className="w-full bg-[#111111] hover:bg-[#D1A71D] text-white font-bold text-sm px-6 py-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl flex justify-center items-center gap-2 group/btn"
+              >
+                Kirim Pesan
+                <svg className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
       </div>
     </section>
   )

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,11 +18,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const pathname = usePathname()
+
   const navLinks = [
-    { href: '#about', label: 'Tentang BGS' },
-    { href: '#activities', label: 'Kegiatan' },
-    { href: '#gallery', label: 'Galeri' },
-    // { href: '#stats', label: 'Kampus' },
+    { href: '/#about', label: 'Tentang BGS' },
+    { href: '/#activities', label: 'Kegiatan' },
+    { href: '/#gallery', label: 'Galeri' },
+    { href: '/#contact', label: 'Kontak' },
   ]
 
   return (
@@ -54,8 +57,11 @@ export default function Navbar() {
                 href={link.href}
                 className="text-sm font-bold text-[#1C1C1C] hover:text-[#D1A71D] transition-colors"
                 onClick={(e) => {
-                  e.preventDefault()
-                  document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' })
+                  if (pathname === '/') {
+                    e.preventDefault()
+                    const targetId = link.href.replace('/#', '#')
+                    document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' })
+                  }
                 }}
               >
                 {link.label}
@@ -65,12 +71,18 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
-            <a
-              href="#join"
+            <Link
+              href="/#contact"
+              onClick={(e) => {
+                if (pathname === '/') {
+                  e.preventDefault()
+                  document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
               className="bg-[#D1A71D] hover:bg-[#A68212] text-white text-sm font-semibold px-7 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5"
             >
-              Join
-            </a>
+              Kontak
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -100,21 +112,30 @@ export default function Navbar() {
               href={link.href}
               className="block px-3 py-2 rounded-md font-bold text-[#1C1C1C] hover:text-[#D1A71D] hover:bg-gray-50"
               onClick={(e) => {
-                e.preventDefault()
+                if (pathname === '/') {
+                  e.preventDefault()
+                  const targetId = link.href.replace('/#', '#')
+                  document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' })
+                }
                 setIsOpen(false)
-                document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' })
               }}
             >
               {link.label}
             </Link>
           ))}
-          <a
-            href="#join"
+          <Link
+            href="/#contact"
             className="block px-3 py-3 mt-4 text-center rounded-xl font-semibold text-white bg-[#D1A71D]"
-            onClick={() => setIsOpen(false)}
+            onClick={(e) => {
+              if (pathname === '/') {
+                e.preventDefault()
+                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+              }
+              setIsOpen(false)
+            }}
           >
-            Join Komunitas
-          </a>
+            Kontak Kami
+          </Link>
         </div>
       </div>
     </nav>

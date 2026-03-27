@@ -22,7 +22,7 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-md mb-10">
-              Komunitas pecinta kereta api yang berdedikasi untuk edukasi keselamatan dan pelestarian budaya perkeretaapian di wilayah Sidoarjo.
+              Komunitas pecinta kereta api yang berdedikasi untuk edukasi keselamatan dan perkeretaapian di wilayah Sidoarjo. 
             </p>
 
             {/* CTA Buttons */}

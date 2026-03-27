@@ -45,7 +45,7 @@ export default function About() {
                </div>
                
                <p className="text-center font-serif italic text-lg text-gray-800 leading-relaxed mt-4">
-                 "Menciptakan budaya tertib berlalu lintas di jalur kereta api demi kenyamanan dan keselamatan bersama."
+                 "Menyatukan pemuda railfans untuk berkontribusi, bersilaturahmi, dan mengabdi bagi masyarakat dan negara."
                </p>
             </div>
             

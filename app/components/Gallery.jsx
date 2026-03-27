@@ -67,8 +67,8 @@ export default function Gallery() {
             </div>
             <h3 className="text-gray-900 font-bold text-lg mb-2">Ribuan Foto</h3>
             <p className="text-sm text-gray-500 mb-4">Eksplorasi dokumentasi lengkap komunitas</p>
-            <a href="#" className="text-[#D1A71D] text-sm font-semibold hover:text-[#A68212] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-              Galeri Penuh <span>&rarr;</span>
+            <a href="/gallery" className="text-[#D1A71D] text-sm font-semibold hover:text-[#A68212] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
+              Lihat Keseluruhan Galeri <span>&rarr;</span>
             </a>
           </div>
 
