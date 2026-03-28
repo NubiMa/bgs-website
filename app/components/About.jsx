@@ -10,9 +10,10 @@ export default function About() {
           <div className="relative mx-auto lg:mx-0 max-w-md w-full">
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
               <Image 
-                src="https://images.unsplash.com/photo-1520607162513-77708c0f0e4c?auto=format&fit=crop&q=80&w=800&h=800"
+                src="/images/bgs-rri.webp"
                 alt="Tentang BGS Sidoarjo"
                 fill
+                loading="lazy"
                 className="object-cover"
                 unoptimized
               />
@@ -32,20 +33,23 @@ export default function About() {
             
             <div className="space-y-4 text-gray-500 leading-relaxed text-[15px]">
                <p>
-                 Barisan Generasi Sepur (BGS) Sidoarjo bukanlah komunitas "train spotting" biasa. Kami adalah penggerak edukasi rel kereta api yang percaya bahwa keselamatan adalah hak setiap warga.
-               </p>
+                 Barisan Generasi Sepur (BGS) Sidoarjo merupakan komunitas sosial penggemar kereta api yang berasal dari Kabupaten Sidoarjo, wilayah Daerah Operasi 8 Surabaya. BGS hadir sebagai wadah bagi para pemuda yang memiliki minat di dunia perkeretaapian sekaligus menjadi ruang untuk menjalin silaturahmi antar sesama railfans, baik di dalam maupun luar Sidoarjo.
+              </p>
                <p>
-                 Berawal dari kebiasaan berkumpul di stasiun terdekat, kami bertransformasi menjadi mitra strategis dalam memberikan edukasi kepada masyarakat umum mengenai bahaya di perlintasan rel kereta dan etika bertransportasi umum.
-               </p>
+                Berawal dari kebiasaan berkumpul di sekitar stasiun, BGS berkembang menjadi komunitas yang aktif dalam kegiatan edukasi, sosial, dan kolaborasi. Kami berkomitmen untuk berkontribusi secara positif melalui edukasi perkeretaapian, kegiatan sosial, serta kepedulian terhadap keselamatan dan lingkungan sekitar rel.
+              </p>
+              <p>
+                BGS juga membuka ruang bagi generasi muda untuk berkembang sebagai relawan yang aktif, peduli, dan berdampak, baik dalam dunia perkeretaapian maupun di tengah masyarakat luas.
+              </p>
             </div>
 
             <div className="mt-10 pt-8 border-t border-gray-200 relative">
                <div className="absolute -top-3.5 left-0 right-0 flex justify-center">
-                 <span className="bg-[#F8F9FA] px-4 text-xs font-bold tracking-widest text-[#A68212]">VISI KAMI</span>
+                 <span className="bg-[#F8F9FA] px-4 text-xs font-bold tracking-widest text-[#A68212]">MOTTO KAMI</span>
                </div>
                
                <p className="text-center font-serif italic text-lg text-gray-800 leading-relaxed mt-4">
-                 "Menyatukan pemuda railfans untuk berkontribusi, bersilaturahmi, dan mengabdi bagi masyarakat dan negara."
+                 "Menebar Manfaat dan Menjalin Silaturahim Sesama"
                </p>
             </div>
             

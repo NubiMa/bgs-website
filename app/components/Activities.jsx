@@ -24,8 +24,8 @@ const activities = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: 'Train Spotting',
-    description: 'Merekam dan melestarikan sejarah perkeretaapian melalui lensa dan dokumentasi visual.',
+    title: 'Fotografi',
+    description: 'Mengamati dan mengabadikan momen kereta api secara langsung sekaligus memperdalam wawasan perkeretaapian.',
   },
   {
     icon: (
@@ -60,11 +60,6 @@ export default function Activities() {
               Kegiatan Rutin Kami
             </h2>
           </div>
-          {/* <div className="max-w-xs md:text-right">
-            <p className="text-sm text-gray-400 leading-relaxed border-l-2 md:border-l-0 md:border-r-2 border-[#D1A71D] pl-4 md:pl-0 md:pr-4 py-1">
-              Bukan hanya hobi, rupa kontribusi nyata aksi nyata setiap hari secara ikhlas dan swadaya.
-            </p>
-          </div> */}
         </div>
 
         {/* Minimalist Cards */}

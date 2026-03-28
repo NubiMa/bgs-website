@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import TiltedCard from './TiltedCard'
 
 export default function Hero() {
   return (
@@ -8,11 +9,6 @@ export default function Hero() {
           
           {/* Left Content */}
           <div className="max-w-xl">
-            {/* Badge */}
-            {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-100 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-600"></span>
-              <span className="text-xs font-bold text-red-600 tracking-wider">DIAKUI OLEH PT KAI</span>
-            </div> */}
 
             {/* Title */}
             <h1 className="text-6xl md:text-7xl font-extrabold text-[#111111] leading-[1.1] mb-6 tracking-tight">
@@ -28,7 +24,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#join"
+                href="#contact"
                 className="inline-flex justify-center items-center bg-[#D1A71D] hover:bg-[#A68212] text-white font-semibold text-sm px-8 py-3.5 rounded-xl transition-colors duration-200"
               >
                 Join Komunitas
@@ -44,25 +40,19 @@ export default function Hero() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="relative h-[500px] w-full lg:h-[600px] rounded-[2rem] overflow-hidden shadow-2xl origin-bottom-right rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
-              {/* Fallback pattern if image is missing, but using a high quality photo to match mockup */}
-              <Image 
-                src="https://images.unsplash.com/photo-1474959783111-a5f50f22ff3a?auto=format&fit=crop&q=80&w=800&h=1200"
-                alt="Stasiun Sidoarjo"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
-            
-            {/* Floating Stats Box */}
-            {/* <div className="absolute -bottom-8 -left-8 bg-white p-5 rounded-2xl shadow-xl flex items-center gap-4 animate-fade-in-up delay-500">
-              <div>
-                <div className="text-xs text-red-500 font-bold uppercase tracking-wider mb-1">Target</div>
-                <div className="text-2xl font-black text-gray-900 leading-none">500+</div>
-                <div className="text-xs text-gray-500 mt-1">Relawan Aktif<br/>Bergabung</div>
+            <TiltedCard rotateAmplitude={3} scaleOnHover={1.02}>
+              <div className="relative h-[500px] w-full lg:h-[600px] rounded-[2rem] overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] origin-bottom-right transition-all duration-700 pointer-events-none">
+                {/* Fallback pattern if image is missing, but using a high quality photo to match mockup */}
+                <Image 
+                  src="/images/bgs-profile.webp"
+                  alt="Stasiun Sidoarjo"
+                  fill
+                  priority
+                  className="object-cover"
+                  unoptimized
+                />
               </div>
-            </div> */}
+            </TiltedCard>
           </div>
 
         </div>

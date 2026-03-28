@@ -27,24 +27,47 @@ export default function Navbar() {
     { href: '/#contact', label: 'Kontak' },
   ]
 
+  const T = 'all 600ms cubic-bezier(0.4, 0, 0.2, 1)'
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'px-4 top-4' : 'px-0 top-0'}`}>
-      <div className={`mx-auto transition-all duration-500 ${
-        isScrolled 
-          ? 'max-w-5xl bg-white/70 backdrop-blur-md shadow-lg border border-gray-200/50 rounded-full px-6 py-3' 
-          : 'max-w-7xl px-4 sm:px-6 lg:px-8 py-5 bg-transparent'
-      }`}>
+    <nav
+      className="fixed w-full z-50"
+      style={{ paddingLeft: isScrolled ? '16px' : '0', paddingRight: isScrolled ? '16px' : '0', top: isScrolled ? '12px' : '0', transition: T }}
+    >
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: isScrolled ? '960px' : '100%',
+          background: isScrolled ? 'rgba(255,255,255,0.75)' : '#1C1C1C',
+          backdropFilter: isScrolled ? 'blur(14px)' : 'none',
+          WebkitBackdropFilter: isScrolled ? 'blur(14px)' : 'none',
+          borderRadius: isScrolled ? '9999px' : '0',
+          padding: isScrolled ? '10px 24px' : '18px 32px',
+          boxShadow: isScrolled ? '0 4px 30px rgba(0,0,0,0.08)' : 'none',
+          border: isScrolled ? '1px solid rgba(229,231,235,0.4)' : '1px solid transparent',
+          transition: T,
+        }}
+      >
         <div className="flex justify-between items-center">
-          {/* Brand */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <Image 
-              src="/images/bgs-logo.png" 
-              alt="BGS Sidoarjo Logo" 
-              width={36} 
-              height={36} 
+          {/* Brand — scrolls to top on homepage */}
+          <Link
+            href="/"
+            className="flex items-center gap-3 group"
+            onClick={(e) => {
+              if (pathname === '/') {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }
+            }}
+          >
+            <Image
+              src="/images/bgs-logo.png"
+              alt="BGS Sidoarjo Logo"
+              width={36}
+              height={36}
               className="object-contain"
             />
-            <span className="text-xl font-extrabold text-[#1C1C1C] tracking-tight">
+            <span style={{ color: isScrolled ? '#1C1C1C' : '#ffffff', transition: T }} className="text-xl font-extrabold tracking-tight">
               BGS Sidoarjo
             </span>
           </Link>
@@ -55,7 +78,8 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm font-bold text-[#1C1C1C] hover:text-[#D1A71D] transition-colors"
+                className="text-sm font-bold hover:text-[#D1A71D]"
+                style={{ color: isScrolled ? '#1C1C1C' : '#ffffff', transition: T }}
                 onClick={(e) => {
                   if (pathname === '/') {
                     e.preventDefault()
@@ -89,7 +113,8 @@ export default function Navbar() {
           <div className="flex md:hidden items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-[#1C1C1C] hover:bg-black/5 focus:outline-none transition-colors"
+              className="p-2 rounded-md hover:bg-white/10 focus:outline-none"
+              style={{ color: isScrolled ? '#1C1C1C' : '#ffffff', transition: T }}
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
