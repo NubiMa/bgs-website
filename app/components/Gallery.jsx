@@ -17,11 +17,11 @@ export default function Gallery() {
           <div className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group shadow-md h-[400px] md:h-full">
             <Image 
               src="/images/posko/posko-3.webp" 
-              alt="Posko Stasiun" 
+              alt="Anggota BGS Sidoarjo bertugas di posko stasiun kereta api" 
               fill
               loading="lazy"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700" 
-              unoptimized
             />
             {/* Hover Content */}
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
@@ -34,11 +34,11 @@ export default function Gallery() {
           <div className="md:col-span-2 md:row-span-1 relative rounded-3xl overflow-hidden group shadow-md h-[250px] md:h-full">
             <Image 
               src="/images/sosperka/sosperka-1.webp" 
-              alt="Sosialisasi & Edukasi" 
+              alt="BGS Sidoarjo menggelar sosialisasi keselamatan perlintasan kereta api" 
               fill
               loading="lazy"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700" 
-              unoptimized
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
               <h3 className="text-white font-bold text-xl mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Sosialisasi & Edukasi</h3>
@@ -50,11 +50,11 @@ export default function Gallery() {
           <div className="md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden group shadow-md h-[250px] md:h-full">
             <Image 
               src="/images/dokumentasi-lain/dokumentasi-2.webp" 
-              alt="Dokumentasi Lain" 
+              alt="Dokumentasi kegiatan lainnya oleh BGS Sidoarjo" 
               fill
               loading="lazy"
+              sizes="(max-width: 768px) 100vw, 25vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700" 
-              unoptimized
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
               <h3 className="text-white font-bold text-lg mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Dokumentasi Lainya</h3>

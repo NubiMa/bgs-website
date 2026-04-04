@@ -58,7 +58,7 @@ export default function CTA() {
             <div className="space-y-6">
               <div className="flex items-start gap-5 group/item cursor-default">
                 <div className="w-12 h-12 rounded-full bg-[#111111] border border-gray-800 flex items-center justify-center text-[#D1A71D] shrink-0 group-hover/item:scale-110 transition-transform duration-300 shadow-md">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -142,8 +142,9 @@ export default function CTA() {
             ) : (
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Nama Lengkap</label>
+                  <label htmlFor="contact-name" className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Nama Lengkap</label>
                   <input
+                    id="contact-name"
                     type="text"
                     name="name"
                     value={form.name}
@@ -155,8 +156,9 @@ export default function CTA() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Alamat Email</label>
+                  <label htmlFor="contact-email" className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Alamat Email</label>
                   <input
+                    id="contact-email"
                     type="email"
                     name="email"
                     value={form.email}
@@ -168,8 +170,9 @@ export default function CTA() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Kritik & Saran</label>
+                  <label htmlFor="contact-message" className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 pl-1">Kritik & Saran</label>
                   <textarea
+                    id="contact-message"
                     rows="4"
                     name="message"
                     value={form.message}

@@ -14,10 +14,10 @@ export default function Footer() {
 
         {/* Right Side Links */}
         <div className="flex items-center gap-6 font-medium text-[11px] text-gray-600">
-          <a href="https://www.instagram.com/bgs.sidoarjo/" className="hover:text-[#D1A71D] transition-colors">Instagram</a>
-          <a href="https://www.facebook.com/bgs.sidoarjo" className="hover:text-[#D1A71D] transition-colors">Facebook</a>
-          <a href="https://www.tiktok.com/@bgs.sidoarjo" className="hover:text-[#D1A71D] transition-colors">Tiktok</a>
-          <a href="https://wa.me/6281559691087" className="hover:text-[#D1A71D] transition-colors">Hubungi Kami</a>
+          <a href="https://www.instagram.com/bgs.sidoarjo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram BGS Sidoarjo" className="hover:text-[#D1A71D] transition-colors">Instagram</a>
+          <a href="https://www.facebook.com/bgs.sidoarjo" target="_blank" rel="noopener noreferrer" aria-label="Facebook BGS Sidoarjo" className="hover:text-[#D1A71D] transition-colors">Facebook</a>
+          <a href="https://www.tiktok.com/@bgs.sidoarjo" target="_blank" rel="noopener noreferrer" aria-label="TikTok BGS Sidoarjo" className="hover:text-[#D1A71D] transition-colors">Tiktok</a>
+          <a href="https://wa.me/6281559691087" target="_blank" rel="noopener noreferrer" aria-label="Hubungi BGS Sidoarjo via WhatsApp" className="hover:text-[#D1A71D] transition-colors">Hubungi Kami</a>
         </div>
       </div>
     </footer>

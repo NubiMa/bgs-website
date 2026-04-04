@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 
-export default function LazyRender({ children, fallback, threshold = 0.0, rootMargin = '500px' }) {
+export default function LazyRender({ children, fallback, threshold = 0.0, rootMargin = '500px', id }) {
   const [isRendered, setIsRendered] = useState(false)
   const ref = useRef()
 
@@ -33,7 +33,7 @@ export default function LazyRender({ children, fallback, threshold = 0.0, rootMa
   }, [threshold, rootMargin])
 
   return (
-    <div ref={ref} className="w-full relative transition-opacity duration-1000 ease-in-out">
+    <div id={id} ref={ref} className="w-full relative transition-opacity duration-1000 ease-in-out">
       {isRendered ? (
         <div className="animate-fade-in">{children}</div>
       ) : (

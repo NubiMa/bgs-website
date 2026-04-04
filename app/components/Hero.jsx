@@ -45,11 +45,11 @@ export default function Hero() {
                 {/* Fallback pattern if image is missing, but using a high quality photo to match mockup */}
                 <Image 
                   src="/images/bgs-profile.webp"
-                  alt="Stasiun Sidoarjo"
+                  alt="Anggota BGS Sidoarjo berfoto di area stasiun kereta api"
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </TiltedCard>

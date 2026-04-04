@@ -15,11 +15,11 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <LazyRender fallback={<CharcoalSkeleton />}><Credibility /></LazyRender>
-      <LazyRender fallback={<SectionSkeleton />}><About /></LazyRender>
-      <LazyRender fallback={<CharcoalSkeleton />}><Activities /></LazyRender>
-      <LazyRender fallback={<GallerySkeleton />}><Gallery /></LazyRender>
-      <LazyRender fallback={<CharcoalSkeleton />}><CTA /></LazyRender>
+      <LazyRender id="credibility" fallback={<CharcoalSkeleton />}><Credibility /></LazyRender>
+      <LazyRender id="about" fallback={<SectionSkeleton />}><About /></LazyRender>
+      <LazyRender id="activities" fallback={<CharcoalSkeleton />}><Activities /></LazyRender>
+      <LazyRender id="gallery" fallback={<GallerySkeleton />}><Gallery /></LazyRender>
+      <LazyRender id="contact" fallback={<CharcoalSkeleton />}><CTA /></LazyRender>
       <Footer />
     </main>
   )

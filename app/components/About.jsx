@@ -11,11 +11,11 @@ export default function About() {
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
               <Image 
                 src="/images/bgs-rri.webp"
-                alt="Tentang BGS Sidoarjo"
+                alt="Anggota BGS Sidoarjo saat kegiatan bersama RRI"
                 fill
                 loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
             </div>

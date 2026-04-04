@@ -113,10 +113,13 @@ export default function Navbar() {
           <div className="flex md:hidden items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
               className="p-2 rounded-md hover:bg-white/10 focus:outline-none"
               style={{ color: isScrolled ? '#1C1C1C' : '#ffffff', transition: T }}
             >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 {isOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -129,7 +132,11 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden absolute w-full left-0 mt-2 transition-all duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+      <div 
+        id="mobile-menu"
+        className={`md:hidden absolute left-0 right-0 mt-2 transition-all duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        style={{ marginLeft: isScrolled ? '-16px' : '0', marginRight: isScrolled ? '-16px' : '0' }}
+      >
         <div className="bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-lg px-4 pt-2 pb-6 flex flex-col space-y-2 rounded-b-3xl">
           {navLinks.map((link) => (
             <Link

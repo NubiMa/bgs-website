@@ -23,6 +23,8 @@ const galleryData = [
     images: [
       "/images/fotografi/fotografi-1.webp",
       "/images/fotografi/fotografi-2.webp",
+      "/images/fotografi/fotografi-3.webp",
+      "/images/fotografi/fotografi-4.webp"
     ]
   },
   {
@@ -120,11 +122,11 @@ export default function GalleryPage() {
                         >
                           <Image 
                             src={src}
-                            alt={`${section.category} Image ${i + 1}`}
+                            alt={`Foto kegiatan ${section.category} BGS Sidoarjo ${i + 1}`}
                             fill
                             loading="lazy"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                            unoptimized
                           />
                           {/* Hover Overlay */}
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none flex flex-col justify-end p-6">
