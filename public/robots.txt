@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bgssidoarjo.vercel.app/sitemap.xml
+Sitemap: https://www.bgssidoarjo.web.id/sitemap.xml
